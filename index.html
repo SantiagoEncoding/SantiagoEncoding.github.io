@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d4e9cfc54b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <nav class="menu navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <a class="nav-logo bold-name fs-1 aqua-color" href="#">/SP/</a>
+            </div>
+            <div id="container-toggle">
+                <div class="toggle" id="dmode">
+                    <i id="moon-icon" class="fa-regular fa-moon"></i>
+                    <i id="sun-icon" class="fa-regular fa-sun"></i>
+                </div>
+            </div>
+            <div class="navbar">
+                <a class="nav-link aqua-color" href="#main">Home</a>
+                <a class="nav-link aqua-color" href="#about">About</a>
+                <a class="nav-link aqua-color" href="#work">Works</a>
+                <a class="nav-link aqua-color" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="main" class="main py-5 aqua-color">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-6 py-5">
+                    <p class="fs-3 text-center">Hi, I'm
+                    <h3 class="text-center">John</h3>
+                    </p>
+                    <p class="fs-5 text-center">FrontEnd Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about aqua-color">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-6 py-5 mx-auto">
+                    <h2 class="bold-name">About me...</h2>
+                    <h6>FrontEnd Developer</h6>
+                    <p class="text-about aqua-color">I am <strong>John Harington</strong>I'm a passionate front-end developer based in London, UK. He developed many types of projects, from landing pages to e-commerce.
+                    I'm passionate about beautiful, next-gen, pixel-perfect interfaces and intuitively implemented UX.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 py-5 mx-auto">
+                    <h2 class="bold-name">Skills...</h2>
+                    <div class="progress my-3">
+                        <div class="progress-bar-striped progress-value1 bg-aqua-color">
+                            <p class="float-start ms-4">HTML/CSS</p>
+                            <p class="float-end me-3">90%</p>
+                        </div>
+                    </div>
+                    <div class="progress my-3">
+                        <div class="progress-bar-striped progress-value2 bg-aqua-color">
+                            <p class="float-start ms-4">JS/TS</p>
+                            <p class="float-end me-3">70%</p>
+                        </div>
+                    </div>
+                    <div class="progress my-3">
+                        <div class="progress-bar-striped progress-value3 bg-aqua-color">
+                            <p class="float-start ms-4">bootstrap</p>
+                            <p class="float-end me-3">85%</p>
+                        </div>
+                    </div>
+                    <div class="progress my-3">
+                        <div class="progress-bar-striped progress-value4 bg-aqua-color">
+                            <p class="float-start ms-4">Angular</p>
+                            <p class="float-end me-3">66%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work my-5 aqua-color">
+        <h2 class="text-center bold-name">Works...</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-semibold">Calculator</h5>
+                    </div>
+                    <div class="img-container mb-3">
+                        <img class="work-img mb-4" src="./img/calculator.jpg" class="card-img" alt="calculator">
+                        <div class="background-txt">
+                            <p>This simple version of the calculator will allow you to perform: addition, subtraction,
+                                division and multiplication in the best way with the highest speed and efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="text-center mb-3" id="liveAlertPlaceholder">
+                        <button type="button" class="btn-color btn btn-outline-primary liveToastBtn">View project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-semibold">To Do</h5>
+                    </div>
+                    <div class="img-container mb-3">
+                        <img class="work-img mb-4" src="./img/ToDo.jpg" class="card-img" alt="calculator">
+                        <div class="background-txt">
+                            <p>To Do is a cloud-based task organiser application. It allows users to manage their tasks
+                                from anywhere.</p>
+                        </div>
+                    </div>
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn-color btn btn-outline-primary liveToastBtn">View project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-semibold">Landing Page</h5>
+                    </div>
+                    <div class="img-container mb-3">
+                        <img class="work-img mb-4" src="./img/landingPage.jpg" class="card-img" alt="calculator">
+                        <div class="background-txt">
+                            <p>A Landing Page is a page of a website focused on converting visitors into leads from user
+                                data.</p>
+                        </div>
+                    </div>
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn-color btn btn-outline-primary liveToastBtn">View project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-semibold">Tic-tac-toe</h5>
+                    </div>
+                    <div class="img-container mb-3">
+                        <img class="work-img mb-4" src="./img/tic-tac-toe.jpg" class="card-img" alt="calculator">
+                        <div class="background-txt">
+                            <p>A game for two players, in which whoever manages to place three of their marks in a row
+                                horizontally, vertically or diagonally is the winner.</p>
+                        </div>
+                    </div>
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn-color btn btn-outline-primary liveToastBtn">View project</button>
+                    </div>
+                </div>
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header color-toast">
+                            <i class="fa-regular fa-bell me-2"></i>
+                            <strong class="me-auto">Alert!</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body color-toast">
+                            Sorry, it's just a test!.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact aqua-color">
+        <div class="container col-lg-6 pb-5">
+            <h2 class="title-contact bold-name text-center">Contact</h2>
+            <div class="container my-3">
+                <i class="fa-solid fa-user"></i>
+                <label for="name-contact" class="form-label">Name</label>
+                <input type="text" id="name-contact" class="form-control color-input" placeholder="What's your name?">
+            </div>
+            <div class="container my-3">
+                <i class="fa-solid fa-envelope"></i>
+                <label for="email-contact" class="form-label">Email address</label>
+                <input type="email" id="email-contact" class="form-control color-input" placeholder="Your email">
+            </div>
+            <div class="container my-3">
+                <i class="fa-solid fa-message"></i>
+                <label for="message-contact" class="form-label">Message</label>
+                <textarea id="message-contact" class="form-control color-input" placeholder="Place your message here..."
+                    rows="5"></textarea>
+            </div>
+            <div class="container">
+                <button type="submit" class="btn-color btn btn-outline-primary mb-3 liveToastBtn">Submit</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer aqua-color">
+        <div class="container text-center">
+            <hr><i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <hr>
+        </div>
+        <div class="container text-center">
+            <p>Copyright &copy; 2023, developed by Santiago Pedraza</p>
+            <p>legal information | Privacy Policy</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+<script src="index.js"></script>
+
+</html>

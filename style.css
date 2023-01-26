@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap");
+
+*{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.bold-name{
+    font-weight: 700;
+}
+
+/*Nav section*/
+
+.menu{
+    border-bottom: 1px solid rgba(10, 15, 109, 0.3);
+    background-color: white;
+    color: #0A0F6D;
+}
+
+.navbar a{
+    color: #0A0F6D;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.nav-logo{
+    cursor: default;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    font-weight: 700;
+}
+
+h3:hover{
+    cursor: default;
+}
+
+#moon-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: black;
+}
+
+#sun-icon{
+    display: none;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .navbar a{
+        padding: 7px;
+        font-size: 1.2rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+#container-toggle{
+    position: relative;
+    width: 60px;
+    height: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #0A0F6D;
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 25px;
+    transform: scale(.7);
+    background-color: white;
+    border-radius: 25px;
+}
+
+/*Main section*/
+.main{
+    color: #0A0F6D;
+    margin-top: 2rem;
+    background: url(./img/profile.jpg) no-repeat;
+    background-size:cover;
+}
+
+@media (max-width: 768px){
+    .main{
+        background:none;
+    }
+}
+
+@media (max-width: 912px) and (min-width: 812px){
+    .main p{
+        margin-right: 400px;
+    }
+    .main h3{
+        margin-right: 400px;
+    }
+}
+
+@media (min-width: 1024px){
+    .main{
+        height: 100vh;
+    }
+}
+
+.main h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+/*About section*/
+
+.about{
+    background: url(./img/background-about.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-size: 1.2rem;
+    border-top: 1px solid #0A0F6D;
+    border-bottom: 1px solid #0A0F6D;
+    background-color:white;
+    color: #0A0F6D;  
+}
+
+@media (max-width: 1024px){
+    .about{
+        background: none;
+    }
+}
+
+.progress-value1{
+    animation: load1 3s normal forwards;
+    background-color: #0A0F6D;
+}
+
+.progress-value2{
+    animation: load2 3s normal forwards;
+    background-color: #0A0F6D;
+}
+
+.progress-value3{
+    animation: load3 3s normal forwards;
+    background-color: #0A0F6D;
+}
+
+.progress-value4{
+    animation: load4 3s normal forwards;
+    background-color: #0A0F6D;
+}
+
+.progress p{
+    color: white;
+    font-weight: 700;
+}
+
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 66%;
+    }
+}
+
+/*Work section*/
+
+.work{
+    color: #0A0F6D; 
+}
+
+.work-img{
+    height: 150px;
+    width: 150px;
+}
+
+.img-container{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-txt{
+    color: white;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all .3s;
+    background: linear-gradient(180deg, rgba(117, 117, 117, 0.733) 0%, hsla(0, 0%, 73%, 1) 100%);
+    top: 0;
+    height: 85%;
+    width: calc(100% - 100px);
+    border-radius: 3px;
+}
+
+.background-txt:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px){
+    .work h5{
+        font-weight: 700;
+    }
+}
+
+.work .btn-color{
+    color:#0A0F6D;
+    border-color: #07119e;
+}
+
+.work .btn-color:hover{
+    background-color: #0A0F6D;
+}
+
+.toast-container .toast-header{
+    background-color: rgba(128, 128, 128, 0.185);
+    color: #0A0F6D;
+}
+
+.toast-container .toast-body{
+    background-color: rgba(128, 128, 128, 0.185);
+    color: #0A0F6D;
+    font-weight: 700;
+}
+
+/*Contact section*/
+
+.contact{
+    background: url(./img/background-contact.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #0A0F6D;
+    border-top: 1px solid #0A0F6D;
+}
+
+@media (max-width: 1024px){
+    .contact{
+        background: none;
+    }
+}
+
+.contact .btn-color{
+    color:#0A0F6D;
+    border-color: #07119e;
+}
+
+.contact .btn-color:hover{
+    background-color: #0A0F6D;
+}
+
+.title-contact{
+    margin-top: 2rem;
+}
+
+.contact .color-input{
+    background-color: #0a0f6d2f;
+}
+
+#message-contact{
+    resize: none;
+}
+
+/*Footer section*/
+.footer{
+    color: #0A0F6D;
+}
+
+.footer i{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.footer i:hover{
+    cursor: pointer;
+}
+
+/*Dark mode*/
+
+.darkmode .aqua-color{
+    color: aqua;
+}
+
+.darkmode .bg-aqua-color{
+    background-color: aqua;
+}
+
+body.darkmode{
+    background-color: black;
+}
+
+/*Dark mode nav*/
+
+@media (max-width: 768px){
+#container-toggle{
+        margin-left: 10px;
+    }
+}
+
+.darkmode #moon-icon{
+    display: none;
+}
+
+.darkmode #sun-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.darkmode #container-toggle{
+    background-color: aqua;
+}
+
+.darkmode .toggle{
+    left: 30px;
+    background-color: black ;
+}
+
+.darkmode .menu{
+    border-bottom: 1px solid rgba(10, 81, 109, 0.603);
+    background-color: black;
+    color: #24201D;
+}
+
+.darkmode .nav-link:hover{
+    color: aqua;
+    font-weight: 700;
+}
+
+/*Dark mode about*/
+
+.darkmode .about{
+    border-top: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+    background-color:black;
+    background: none;  
+}
+
+.darkmode .about .progress p{ 
+    color: black;
+}
+
+/*Dark mode work*/
+
+.darkmode .work .card{
+    background-color: black;
+}
+
+.darkmode .contact{
+
+    background:none;
+    border-top: 1px solid aqua;
+}
+
+.darkmode .btn-color{
+    color: aqua;
+    border-color: aqua;
+}
+
+.darkmode .btn-color:hover{
+    background-color: rgb(19, 78, 78);
+}
+
+.darkmode .background-txt{
+    color: black;
+    background-color: rgba(0, 255, 255, 0.801);
+}
+
+.darkmode .color-toast{
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.849);    
+}
+
+/*Dark mode contact*/
+
+.darkmode .contact .color-input{
+    background-color: rgb(169, 255, 226);
+}
+
+
